@@ -17,9 +17,6 @@ var AppModel = Backbone.Model.extend({
       console.log('Hit');
     }, this);
 
-    // params.library.on('songEnded', function(song){
-
-
     params.library.on('play', function(song) {
       this.set('currentSong', song);
     }, this);
